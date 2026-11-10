@@ -161,7 +161,6 @@
       <div class="links">
         <!-- EDIT ME: replace these with your real profile links, or delete a line -->
         <a href="https://instagram.com/yourhandle">Instagram</a>
-        <a href="https://facebook.com/yourpage">Facebook</a>
       </div>
     </div>
   </section>
