@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Touchpoint BGI | SOPs, onboarding and admin for hospitality teams</title>
+<meta name="description" content="Barbados-based support for hotels and restaurants worldwide: SOP writing, onboarding and offboarding kits, and payroll hours support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600;700;800&family=Questrial&display=swap" rel="stylesheet">
+<style>
+  /* EDIT ME: change colours here and the whole page updates */
+  :root{
+    --cream:#FFF5E6; --ink:#2D2D2D; --mint:#BDECB0;
+    --sage:#9AA88A; --blush:#DCCBBD; --clay:#CF7F5C;
+    --display:"MuseoModerno","Arial Black",system-ui,sans-serif;
+    --body:"Questrial",system-ui,-apple-system,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;font-synthesis:none}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
+  h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.15;letter-spacing:-.01em}
+
+  /* Hero */
+  .hero{padding:clamp(3rem,9vw,6.5rem) 0 clamp(2.5rem,6vw,4rem)}
+  .logo{margin:0 0 2rem}
+  .logo img{display:block;width:min(100%,760px);height:auto}
+  .lead{font-family:var(--display);font-weight:700;font-size:clamp(1.35rem,3.6vw,2.2rem);line-height:1.3;max-width:20em}
+  .sub{max-width:34em;margin-top:1.25rem}
+  .btn{display:inline-block;margin-top:2rem;background:var(--ink);color:var(--cream);text-decoration:none;font-family:var(--display);font-weight:700;padding:.95rem 1.6rem;border-radius:999px;transition:background .2s,color .2s}
+  .btn:hover{background:var(--clay);color:var(--ink)}
+
+  section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+  h2{font-size:clamp(1.5rem,3.6vw,2.3rem);margin-bottom:1.5rem;max-width:18em}
+
+  /* About */
+  .about{display:grid;gap:2rem;grid-template-columns:1fr}
+  .about p{max-width:36em}
+  .about p + p{margin-top:1rem}
+  .pull{font-family:var(--display);font-weight:600;font-size:clamp(1.15rem,2.6vw,1.5rem);line-height:1.35;background:var(--sage);padding:1.75rem;border-radius:2.6rem 1rem 3rem 1rem;margin-bottom:1.5rem}
+  .about aside{align-self:start}
+  .facts{list-style:none;padding:0;display:grid;gap:.75rem;align-content:start}
+  .facts li{background:var(--mint);padding:.9rem 1.2rem;border-radius:999px;font-family:var(--display);font-weight:600;font-size:.95rem;width:fit-content}
+  @media(min-width:800px){.about{grid-template-columns:1.4fr 1fr;gap:4rem}}
+
+  /* Services: paint-swatch blocks, each shaped differently */
+  .services{display:grid;gap:1.25rem;grid-template-columns:1fr}
+  .svc{padding:2rem 1.75rem 2.25rem}
+  .svc h3{font-size:1.15rem;margin-bottom:.6rem}
+  .svc:nth-child(1){background:var(--sage);border-radius:2.6rem 1rem 3rem 1rem}
+  .svc:nth-child(2){background:var(--blush);border-radius:1rem 3rem 1rem 2.6rem}
+  .svc:nth-child(3){background:var(--clay);border-radius:1rem 2.6rem 1rem 3rem}
+  .svc:nth-child(4){background:var(--mint);border-radius:3rem 1rem 2.6rem 1rem}
+  @media(min-width:700px){.services{grid-template-columns:1fr 1fr}}
+
+  /* Process: a real sequence, so numbered */
+  .steps{list-style:none;padding:0;display:grid;gap:1.5rem;counter-reset:s}
+  .steps li{counter-increment:s;display:grid;grid-template-columns:3.2rem 1fr;gap:1rem;align-items:start;max-width:40em}
+  .steps li::before{content:counter(s);font-family:var(--display);font-weight:700;width:3.2rem;height:3.2rem;border-radius:50%;background:var(--mint);display:grid;place-items:center}
+  .steps strong{display:block;font-family:var(--display);font-size:1.05rem;font-weight:600;margin-bottom:.15rem}
+
+  /* Contact */
+  .contact{background:var(--ink);color:var(--cream);border-radius:2.5rem 2.5rem 0 0}
+  .contact h2{max-width:14em}
+  .contact p{max-width:32em}
+  .contact .btn{background:var(--mint);color:var(--ink)}
+  .contact .btn:hover{background:var(--clay)}
+  .links{margin-top:1.75rem;display:flex;gap:1.5rem;flex-wrap:wrap}
+  .links a{text-underline-offset:4px}
+  footer{background:var(--ink);color:var(--blush);padding:1.5rem 0 2.5rem;font-size:.9rem}
+
+  @media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .btn{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1 class="logo"><img src="logo.png" alt="Touchpoint BGI" width="1200" height="764"></h1>
+    <p class="lead">Systems that make your team's day easier.</p>
+    <p class="sub">I write the procedures, onboarding kits and handover documents that hotels and restaurants need, and I help keep payroll hours in order. Remote, clear and ready for your team to use.</p>
+    <a class="btn" href="#contact">Request a quote</a>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>Why Touchpoint BGI exists</h2>
+        <p>Hi, I'm Danielle Sanson, founder of Touchpoint BGI, a Barbados-based company that works with hospitality businesses anywhere in the world.</p>
+        <p>My career is in hospitality, across hotel and restaurant operations. Over time I moved into the administrative side: payroll hours, onboarding and offboarding, and writing and refining the SOPs that teams rely on. It's where I do my best work, so it's where I've chosen to focus.</p>
+        <p>Small hospitality businesses rarely struggle because of one big mistake. More often they weaken slowly, through gaps: training that depends on who happens to be on shift, standards that live in one person's head, procedures that were never written down. Staff notice. When a pay slip is wrong, trust goes quickly, and a disgruntled team is expensive.</p>
+        <p>Wages are usually one of the largest costs in the business, yet many owners have nobody dedicated to tracking hours and making that cost easy to see and understand. No owner wants to short their staff, and none can afford to be unsure how much money is going out.</p>
+        <p>My goal is to make admin, training and payroll hours easier and more efficient for small businesses, so owners can look after their people while protecting their own stake in the company's success.</p>
+      </div>
+      <aside>
+        <blockquote class="pull">Look after your people. Protect your business. Know your numbers.</blockquote>
+        <ul class="facts">
+          <li>Barbados based, working worldwide</li>
+          <li>Hospitality background</li>
+          <li>Admin and payroll focus</li>
+          <li>Plain, clear writing</li>
+          <li>Editable files you keep</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What I can do for you</h2>
+      <div class="services">
+        <article class="svc">
+          <h3>SOP writing and clean-up</h3>
+          <p>Step-by-step procedures for the jobs your team repeats every day: opening and closing, cash handling, guest service, tip policies. I write new ones and tidy the ones you already have.</p>
+        </article>
+        <article class="svc">
+          <h3>Onboarding kits</h3>
+          <p>Checklists, first-week schedules and welcome packs, so every new hire knows what to do from day one.</p>
+        </article>
+        <article class="svc">
+          <h3>Offboarding and handover</h3>
+          <p>Exit checklists and handover templates, so knowledge, keys and system access don't leave with the person.</p>
+        </article>
+        <article class="svc">
+          <h3>Payroll hours support</h3>
+          <p>Timesheet preparation and checking before payroll goes out. This is admin and prep support, not payroll filing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><div><strong>Tell me what's slowing your team down</strong>A short message or call is enough to start.</div></li>
+        <li><div><strong>I draft it in your venue's voice</strong>Your procedures, your terms, written so they're easy to follow.</div></li>
+        <li><div><strong>We refine it, then you keep it</strong>You get editable files in Google Docs or Word, ready to update as you grow.</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Tell me what you need.</h2>
+      <p>Send a short note about your team and the process you'd like help with, and I'll reply with next steps and a quote.</p>
+      <!-- EDIT ME: replace the email address below -->
+      <a class="btn" href="mailto:hello@example.com?subject=Quote%20request">Email Touchpoint BGI</a>
+      <div class="links">
+        <!-- EDIT ME: replace these with your real profile links, or delete a line -->
+        <a href="https://instagram.com/yourhandle">Instagram</a>
+        <a href="https://facebook.com/yourpage">Facebook</a>
+        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Touchpoint BGI | Barbados, working worldwide</div>
+</footer>
+
+</body>
+</html>
