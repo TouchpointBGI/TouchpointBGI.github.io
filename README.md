@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -25,10 +26,11 @@
 
   /* Hero */
   .hero{padding:clamp(3rem,9vw,6.5rem) 0 clamp(2.5rem,6vw,4rem)}
+  .hero{text-align:center}
   .logo{margin:0 0 2rem}
-  .logo img{display:block;width:min(100%,760px);height:auto}
-  .lead{font-family:var(--display);font-weight:700;font-size:clamp(1.35rem,3.6vw,2.2rem);line-height:1.3;max-width:20em}
-  .sub{max-width:34em;margin-top:1.25rem}
+  .logo img{display:block;width:min(100%,380px);height:auto;margin:0 auto}
+  .lead{font-family:var(--display);font-weight:700;font-size:clamp(1.35rem,3.6vw,2.2rem);line-height:1.3;max-width:20em;margin-left:auto;margin-right:auto}
+  .sub{max-width:34em;margin:1.25rem auto 0}
   .btn{display:inline-block;margin-top:2rem;background:var(--ink);color:var(--cream);text-decoration:none;font-family:var(--display);font-weight:700;padding:.95rem 1.6rem;border-radius:999px;transition:background .2s,color .2s}
   .btn:hover{background:var(--clay);color:var(--ink)}
 
@@ -151,11 +153,9 @@
     <div class="wrap">
       <h2>Tell me what you need.</h2>
       <p>Send a short note about your team and the process you'd like help with, and I'll reply with next steps and a quote.</p>
-      <!-- EDIT ME: replace the email address below -->
       <a class="btn" href="mailto:touchpointbgi@gmail.com?subject=Quote%20request">Email Touchpoint BGI</a>
       <div class="links">
-        <!-- EDIT ME: replace these with your real profile links, or delete a line -->
-        <a href="https://instagram.com/touchpointbgi">Instagram</a>
+        <a href="https://www.instagram.com/touchpointbgi">Instagram: @touchpointbgi</a>
       </div>
     </div>
   </section>
