@@ -26,6 +26,7 @@
 
   /* Hero */
   .hero{padding:clamp(3rem,9vw,6.5rem) 0 clamp(2.5rem,6vw,4rem)}
+  .bgi{font-family:var(--body);font-weight:400;letter-spacing:.03em}
   .hero{text-align:center}
   .logo{margin:0 0 2rem}
   .logo img{display:block;width:min(100%,380px);height:auto;margin:0 auto}
@@ -94,7 +95,7 @@
   <section id="about">
     <div class="wrap about">
       <div>
-        <h2>Why Touchpoint BGI exists</h2>
+        <h2>Why Touchpoint <span class="bgi">BGI</span> exists</h2>
         <p>Hi, I'm Danielle, founder of Touchpoint BGI, a Barbados-based company that works with hospitality businesses anywhere in the world.</p>
         <p>My career is in hospitality, across hotel and restaurant operations. Over time I moved into the administrative side: payroll hours, onboarding and offboarding, and writing and refining the SOPs that teams rely on. It's where I do my best work, so it's where I've chosen to focus.</p>
         <p>Small hospitality businesses rarely struggle because of one big mistake. More often they weaken slowly, through gaps: training that depends on who happens to be on shift, standards that live in one person's head, procedures that were never written down. Staff notice. When a pay slip is wrong, trust goes quickly, and a disgruntled team is expensive.</p>
@@ -153,7 +154,7 @@
     <div class="wrap">
       <h2>Tell me what you need.</h2>
       <p>Send a short note about your team and the process you'd like help with, and I'll reply with next steps and a quote.</p>
-      <a class="btn" href="mailto:touchpointbgi@gmail.com?subject=Quote%20request">Email Touchpoint BGI</a>
+      <a class="btn" href="mailto:touchpointbgi@gmail.com?subject=Quote%20request">Email Touchpoint <span class="bgi">BGI</span></a>
       <div class="links">
         <a href="https://www.instagram.com/touchpointbgi">Instagram: @touchpointbgi</a>
       </div>
