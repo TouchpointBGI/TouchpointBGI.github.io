@@ -41,7 +41,7 @@
   .about{display:grid;gap:2rem;grid-template-columns:1fr}
   .about p{max-width:36em}
   .about p + p{margin-top:1rem}
-  .pull{font-family:var(--display);font-weight:600;font-size:clamp(1.15rem,2.6vw,1.5rem);line-height:1.35;background:var(--sage);padding:1.75rem;border-radius:2.6rem 1rem 3rem 1rem;margin-bottom:1.5rem}
+  .pull{font-family:var(--display);font-weight:600;font-size:clamp(.95rem,1.8vw,1.1rem);line-height:1.6;text-wrap:balance;background:var(--sage);padding:2.5rem 2.25rem;border-radius:2.6rem 1rem 3rem 1rem;margin-bottom:1.5rem}
   .about aside{align-self:start}
   .facts{list-style:none;padding:0;display:grid;gap:.75rem;align-content:start}
   .facts li{background:var(--mint);padding:.9rem 1.2rem;border-radius:999px;font-family:var(--display);font-weight:600;font-size:.95rem;width:fit-content}
@@ -102,7 +102,7 @@
         <p>My goal is to make admin, training and payroll hours easier and more efficient for small businesses, so owners can look after their people while protecting their own stake in the company's success.</p>
       </div>
       <aside>
-        <blockquote class="pull">Look after your people. Protect your business. Know your numbers.</blockquote>
+        <blockquote class="pull">Look after your people.<br>Protect your business.<br>Know your numbers.</blockquote>
         <ul class="facts">
           <li>Barbados based, working worldwide</li>
           <li>Hospitality background</li>
